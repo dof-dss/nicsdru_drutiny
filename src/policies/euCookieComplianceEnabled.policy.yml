@@ -1,0 +1,16 @@
+title: EU Cookie Compliance module is installed
+name: Drupal-8:EuCookieComplianceEnabled
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+tags:
+  - Drupal 8
+  - Best Practice
+description: |
+  The EU Cookie Compliance module aims at making the website compliant with EU cookie regulation.
+remediation: "Enable the EU Cookie Compliance module: `drush pm-uninstall eu_cookie_compliance -y`"
+success: The EU Cookie Compliance module is not currently enabled.
+failure: The EU Cookie Compliance module is currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is installed.
+    default: eu_cookie_compliance
