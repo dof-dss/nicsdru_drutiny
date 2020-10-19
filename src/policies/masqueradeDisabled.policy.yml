@@ -1,0 +1,17 @@
+title: Masquerade module is not installed
+name: Drupal-8:masqueradeDisabled
+class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
+tags:
+  - Drupal 8
+  - Best Practice
+  - Performance
+description: |
+  The Masquerade module which allows switching between various user accounts should not be enabled.
+remediation: "Disable the masquerade module: `drush pm-uninstall masquerade -y`"
+success: The masquerade module is not currently enabled.
+failure: The masquerade module is currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is not installed.
+    default: masquerade
