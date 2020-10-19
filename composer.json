@@ -1,0 +1,15 @@
+{
+  "name": "dof-dss/drutiny",
+  "type": "library",
+  "description": "Policies and audits for Drutiny by the Department of Finance Digital Shared Services, Northern Ireland.",
+  "keywords": ["drupal", "audit", "drush", "ssh", "report"],
+  "license": "GPL-2.0",
+  "authors": [
+    {"name": "Steve Cousins", "email": "hello@appturo.com"}
+  ],
+  "require": {
+    "drutiny/drutiny": "^2.3",
+    "symfony/yaml": "^3.2 || ^4.0"
+  },
+  "minimum-stability": "dev",
+}
