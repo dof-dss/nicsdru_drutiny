@@ -1,22 +1,23 @@
 title: 'NIDirect Profile'
 description: 'NIDIrect standard checks'
 policies:
-    'Drupal:AnonSession': { severity: 'high' }
-    'Drupal:SyslogEnabled': { severity: 'critical' }
-    'Drupal-8:CssAggregation': { severity: 'high' }
-    'Drupal-8:JsAggregation': { severity: 'high' }
-    'Drupal-8:DevelDisabled': { severity: 'high' }
-    'Drupal-8:WebprofilerDisabled': { severity: 'high' }
-    'Drupal-8:ErrorLevel': { severity: 'critical' }
-    'Drupal-8:DblogDisabled': { severity: 'medium' }
-    'Drupal-8:DuplicateModules': { severity: 'low' }
-    'Drupal-8:PhpDisabled': { severity: 'critical' }
-    'Drupal-8:NoExperimental': { severity: 'low' }
-    'Drupal-8:User1LockDown': { severity: 'high' }
-    'Drupal-8:KintDisabled': { severity: 'high' }
-    'Drupal-8:PageCacheExpiry': { severity: 'high' }
-    'Drupal-8:UpdateDisabled': { severity: 'low' }
-    'Drupal-8:ViewsUIDisabled': { severity: 'medium' }
+    'Drupal:SyslogEnabled':             { severity: 'critical' }
+    'Drupal-8:ErrorLevel':              { severity: 'critical' }
+    'Drupal-8:PhpDisabled':             { severity: 'critical' }
+    'Drupal:AnonSession':               { severity: 'high' }
+    'Drupal-8:CssAggregation':          { severity: 'high' }
+    'Drupal-8:JsAggregation':           { severity: 'high' }
+    'Drupal-8:User1LockDown':           { severity: 'high' }
+    'Drupal-8:KintDisabled':            { severity: 'high' }
+    'Drupal-8:PageCacheExpiry':         { severity: 'high' }
+    'Drupal-8:DevelDisabled':           { severity: 'high' }
+    'Drupal-8:WebprofilerDisabled':     { severity: 'high' }
+    'Drupal-8:DblogDisabled':           { severity: 'high' }
+    'Drupal-8:ViewsUIDisabled':         { severity: 'medium' }
+    'Drupal-8:masqueradeDisabled':      { severity: 'medium' }
+    'Drupal-8:UpdateDisabled':          { severity: 'low' }
+    'Drupal-8:DuplicateModules':        { severity: 'low' }
+    'Drupal-8:NoExperimental':          { severity: 'low' }
 content:
     - { heading: Purpose, body: "This report is designed to provide some feedback on the overall health of the web application by performing some deep dive analysis. The items surfaced in the report can help improve performance and stability.\n" }
     - { heading: 'Reporting period', body: "Period | Date time\n------ | ---------\nStart | {{reporting_period_start}}\nEnd | {{reporting_period_end}}\n" }
