@@ -13,8 +13,9 @@ policies:
     'Drupal-8:DevelDisabled':           { severity: 'high' }
     'Drupal-8:WebprofilerDisabled':     { severity: 'high' }
     'Drupal-8:DblogDisabled':           { severity: 'high' }
+    'Drupal-8:StageFileProxyDisabled':  { severity: 'high' }
     'Drupal-8:ViewsUIDisabled':         { severity: 'medium' }
-    'Drupal-8:masqueradeDisabled':      { severity: 'medium' }
+    'Drupal-8:MasqueradeDisabled':      { severity: 'medium' }
     'Drupal-8:UpdateDisabled':          { severity: 'low' }
     'Drupal-8:DuplicateModules':        { severity: 'low' }
     'Drupal-8:NoExperimental':          { severity: 'low' }

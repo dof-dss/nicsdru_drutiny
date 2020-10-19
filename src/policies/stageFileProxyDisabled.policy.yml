@@ -1,0 +1,17 @@
+title: Stage File Proxy module is not installed
+name: Drupal-8:StageFileProxyDisabled
+class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
+tags:
+  - Drupal 8
+  - Best Practice
+  - Performance
+description: |
+  The Stage File Proxy module proxies files from production server and should not be enabled on production sites.
+remediation: "Disable the masquerade module: `drush pm-uninstall stage_file_proxy -y`"
+success: The Stage File Proxy module is not currently enabled.
+failure: The Stage File Proxy module is currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is not installed.
+    default: stage_file_proxy

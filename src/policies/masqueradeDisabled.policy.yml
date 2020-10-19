@@ -1,5 +1,5 @@
 title: Masquerade module is not installed
-name: Drupal-8:masqueradeDisabled
+name: Drupal-8:MasqueradeDisabled
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
   - Drupal 8
