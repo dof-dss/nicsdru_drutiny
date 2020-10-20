@@ -1,0 +1,11 @@
+title: Search API indexes are complete
+name: Drupal-8:SearchApiIndexesComplete
+class: \DofDss\Drutiny\Audit\SearchApiIndexed
+tags:
+  - Drupal 8
+  - Best Practice
+description: |
+  Search API indexes should be 100% complete to enable searching across all index content .
+remediation: "View the Search API server at /admin/config/search/search-api click on the indexes and "
+success: Search API indexes and complete.
+failure: Search API indexes are not complete.

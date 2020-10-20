@@ -14,18 +14,16 @@ class SearchApiIndexed extends Audit {
    * @inheritdoc
    */
   public function audit(Sandbox $sandbox) {
-    $result = $sandbox->drush(['format' => 'json'])->sapi-s();
+    $result = $sandbox->drush(['format' => 'json'])->searchApiStatus();
+    $complete = TRUE;
 
-    $json = json_decode($json);
-    $incomplete_indexes = FALSE;
-
-    foreach ($json as $search_index) {
-        if ($index->complete !== '100%') {
-            $incomplete_indexes = TRUE;
+    foreach ($result as $search_index) {
+        if ($search_index['complete'] != '100%') {
+            $complete = FALSE;
         }
     }
 
-    return ($incomplete_indexes) ? Audit::FAIL : Audit::SUCCESS;
+    return $complete;
   }
 
 }

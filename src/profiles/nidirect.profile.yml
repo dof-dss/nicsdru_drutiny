@@ -20,6 +20,7 @@ policies:
     'Drupal-8:UpdateDisabled':              { severity: 'low' }
     'Drupal-8:DuplicateModules':            { severity: 'low' }
     'Drupal-8:NoExperimental':              { severity: 'low' }
+    'Drupal-8:SearchApiIndexesComplete':    { severity: 'low' }
 content:
     - { heading: Purpose, body: "This report is designed to provide some feedback on the overall health of the web application by performing some deep dive analysis. The items surfaced in the report can help improve performance and stability.\n" }
     - { heading: 'Reporting period', body: "Period | Date time\n------ | ---------\nStart | {{reporting_period_start}}\nEnd | {{reporting_period_end}}\n" }
