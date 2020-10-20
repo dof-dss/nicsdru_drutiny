@@ -11,5 +11,10 @@
     "drutiny/drutiny": "^2.3",
     "symfony/yaml": "^3.2 || ^4.0"
   },
-  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "DofDss\\Drutiny\\": "src",
+    }
+  },
+  "minimum-stability": "dev"
 }
