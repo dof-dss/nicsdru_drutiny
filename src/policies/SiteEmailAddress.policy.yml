@@ -1,0 +1,24 @@
+title: Site email address is correctly set
+name: Drupal-8:SiteEmailCheck
+class: \Drutiny\Plugin\Drupal8\Audit\ConfigCheck
+tags:
+  - Drupal 8
+  - Best Practice
+description: |
+  Check the site email address.
+remediation: "Update the site email under /admin/config/system/site-information"
+success: The correct site email address is set.
+failure: The site email address is incorrect.
+parameters:
+  collection:
+    type: string
+    description: The collection the config belongs to.
+    default: system.site
+  key:
+    type: string
+    description: The key the config belongs to.
+    default: mail
+  value:
+    type: string
+    description: The value to compare against the retrived value.
+    default: noreply@nidirect.gov.uk
