@@ -1,0 +1,17 @@
+title: Fastly module is installed
+name: Drupal-8:FastlyEnabled
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+tags:
+  - Drupal 8
+  - Best Practice
+  - Performance
+description: |
+  The Fastly module connects to the Fastly API service.
+remediation: "Enable the Fastly module: `drush pm-uninstall fastly -y`"
+success: The Fastly module is currently enabled.
+failure: The Fastly module is not enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is installed.
+    default: fastly

@@ -7,8 +7,8 @@ tags:
 description: |
   The EU Cookie Compliance module aims at making the website compliant with EU cookie regulation.
 remediation: "Enable the EU Cookie Compliance module: `drush pm-uninstall eu_cookie_compliance -y`"
-success: The EU Cookie Compliance module is not currently enabled.
-failure: The EU Cookie Compliance module is currently enabled.
+success: The EU Cookie Compliance module is currently enabled.
+failure: The EU Cookie Compliance module is not enabled.
 parameters:
   module:
     type: string
