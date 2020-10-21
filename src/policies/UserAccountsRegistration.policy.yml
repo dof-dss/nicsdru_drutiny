@@ -1,0 +1,24 @@
+title: Who can register new user accounts
+name: Drupal-8:UserAccountsRegistration
+class: \Drutiny\Plugin\Drupal8\Audit\ConfigCheck
+tags:
+  - Drupal 8
+  - Best Practice
+description: |
+  Check who can register new user accounts.
+remediation: "Update the registration settings under admin/config/people/accounts"
+success: The user registration settings are correct.
+failure: The user registration settings are incorrect.
+parameters:
+  collection:
+    type: string
+    description: The collection the config belongs to.
+    default: user.settings
+  key:
+    type: string
+    description: The key the config belongs to.
+    default: register
+  value:
+    type: string
+    description: The value to compare against the retrived value.
+    default: admin_only

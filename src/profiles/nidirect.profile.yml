@@ -4,6 +4,7 @@ policies:
     'Drupal:SyslogEnabled':                 { severity: 'critical' }
     'Drupal-8:ErrorLevel':                  { severity: 'critical' }
     'Drupal-8:PhpDisabled':                 { severity: 'critical' }
+    'Drupal-8:UserAccountsRegistration':    { severity: 'critical' }
     'Drupal:AnonSession':                   { severity: 'high' }
     'Drupal-8:CssAggregation':              { severity: 'high' }
     'Drupal-8:JsAggregation':               { severity: 'high' }
