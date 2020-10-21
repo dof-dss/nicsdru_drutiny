@@ -1,0 +1,28 @@
+title: Uploaded temporary files are deleted
+name: Drupal-8:TemporaryFilesAreDeleted
+class: \Drutiny\Plugin\Drupal8\Audit\ConfigCheck
+tags:
+  - Drupal 8
+  - Best Practice
+description: |
+  Ensure that any uploaded files are deleted from the system after a set period of time.
+remediation: "Update the 'Delete temporary files after' setting under /admin/config/media/file-system"
+success: "The 'Delete temporary files after' setting is not set to 'Never'."
+failure: "The 'Delete temporary files after' setting is set to 'Never'."
+parameters:
+  collection:
+    type: string
+    description: The collection the config belongs to.
+    default: system.file
+  key:
+    type: string
+    description: The key the config belongs to.
+    default: temporary_maximum_age
+  value:
+    type: string
+    description: The value to compare against the retrived value.
+    default: 0
+  comp_type:
+    type: string
+    description: The type of comparison to conduct. Defaults to equals. See Drutiny\Audit\AbstractComparison.
+    default: !=
